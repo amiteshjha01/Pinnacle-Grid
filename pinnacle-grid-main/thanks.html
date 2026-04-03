@@ -93,9 +93,63 @@
 
 <body class="bg-light">
   <div class="site-wrap">
+    <!-- ======= Header =======-->
+    <header class="fbs__net-navbar navbar navbar-expand-lg active" aria-label="freebootstrap.net navbar">
+      <div class="container d-flex align-items-center justify-content-between">
 
+        <!-- Start Logo-->
+        <a class="navbar-brand w-auto" href="index.html">
+          <div class="d-flex flex-column align-items-start">
+            <img class="logo dark img-fluid custom-logo" src="assets/images/logo-main.svg" alt="Pinnacle Grid Logo">
+            <img class="logo light img-fluid custom-logo" src="assets/images/logo-light.svg" alt="Pinnacle Grid Logo Light">
+            <span class="logo-tagline">Make Your Brand Inexorable</span>
+          </div>
+        </a>
+        <!-- End Logo-->
+
+        <!-- Start offcanvas-->
+        <div class="offcanvas offcanvas-start w-75" id="fbs__net-navbars" tabindex="-1" aria-labelledby="fbs__net-navbarsLabel">
+          <div class="offcanvas-header d-lg-none">
+            <div class="offcanvas-header-logo">
+              <a class="logo-link" id="fbs__net-navbarsLabel" href="index.html">
+                <div class="d-flex flex-column align-items-start">
+                  <img class="logo dark img-fluid custom-logo" src="assets/images/logo-main.svg" alt="Pinnacle Grid">
+                  <img class="logo light img-fluid custom-logo" src="assets/images/logo-light.svg" alt="Pinnacle Grid">
+                  <span class="logo-tagline">Make Your Brand Inexorable</span>
+                </div>
+              </a>
+            </div>
+            <button class="btn-close btn-close-black" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+
+          <div class="offcanvas-body align-items-lg-center">
+            <ul class="navbar-nav nav ms-auto ps-lg-5 mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- End offcanvas-->
+
+        <div class="ms-auto w-auto">
+          <div class="header-social d-flex align-items-center gap-1">
+            <a class="btn btn-primary py-2 px-4 shadow-sm" href="index.html#contact">Get Quote</a>
+            <button class="fbs__net-navbar-toggler d-lg-none d-flex justify-content-center align-items-center ms-auto" data-bs-toggle="offcanvas" data-bs-target="#fbs__net-navbars" aria-controls="fbs__net-navbars" aria-label="Toggle navigation" aria-expanded="false">
+              <svg class="fbs__net-icon-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="21" x2="3" y1="6" y2="6"></line>
+                <line x1="15" x2="3" y1="12" y2="12"></line>
+                <line x1="17" x2="3" y1="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
     <!-- Main Section -->
-    <main class="d-flex align-items-center min-vh-100 py-5">
+    <main class="d-flex align-items-center py-5" style="min-height: 80vh;">
       <div class="container text-center">
         <div class="row justify-content-center">
           <div class="col-lg-6 col-md-8">

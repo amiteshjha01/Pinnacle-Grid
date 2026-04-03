@@ -97,6 +97,31 @@ h6 {
   width: 110px; /* or height: 60px; */
 }
 
+.logo-tagline {
+  display: block;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: -2px; /* Tighten vertical space */
+  margin-left: 32px; /* Align under "PINNACLE" text */
+  text-transform: uppercase;
+  line-height: 1;
+  transition: 0.3s all ease-in-out;
+  color: #c57c2c; /* Brand Gold Accent */
+}
+
+/* Ensure tagline remains legible in different navbar states */
+.fbs__net-navbar.active .logo-tagline,
+.fbs__net-navbar.dark .logo-tagline {
+  color: #c57c2c; /* Maintain brand gold across states */
+}
+
+@media (max-width: 991.98px) {
+  .logo-tagline {
+    font-size: 7px;
+  }
+}
+
 
 .text-heading-color {
   color: var(--bs-heading-color);
